@@ -9,3 +9,11 @@
 3. 区分 MVP 必需能力和长期能力。
 4. 对涉及身份、密码学、节点发现和自动化权限的变化新增 ADR。
 5. 保持协议层、领域层和基础设施适配层的依赖方向清晰。
+
+提交前运行文档门禁：
+
+```powershell
+pwsh ./scripts/validate-docs.ps1
+```
+
+涉及安全边界、对手能力或漏洞的内容还应对照 [核心威胁模型](docs/08-core-threat-model.md)；未公开漏洞请遵循 [安全政策](SECURITY.md) 私密报告，不要写入公开 Issue 或 PR。
